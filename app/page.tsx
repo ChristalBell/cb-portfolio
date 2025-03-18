@@ -1,3 +1,5 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import React from "react";
@@ -5,7 +7,8 @@ import React from "react";
 const Home = () => {
   return (
     <Box>
-      <Typography variant="h1">Home</Typography>
+      <Header />
+      <Hero />
     </Box>
   );
 };
