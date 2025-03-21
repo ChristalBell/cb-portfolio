@@ -1,9 +1,9 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Project from "@/components/Project";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import React from "react";
-import Project from "@/components/projects/Project";
 
 const Home = () => {
   return (
