@@ -12,7 +12,9 @@ const Header = () => {
       }}
     >
       <Box>
-        <Typography variant="h1">Christal Bell</Typography>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+          Christal Bell
+        </Typography>
       </Box>
       <Box>
         <a style={{ paddingRight: "1.5rem" }}>github</a>

@@ -4,7 +4,6 @@ import React from "react";
 const ProjectPage = () => {
   return (
     <div>
-      <p>Im the project container </p>
       <Project />
     </div>
   );

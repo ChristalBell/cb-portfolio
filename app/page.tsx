@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Project from "@/components/Project";
@@ -11,6 +12,7 @@ const Home = () => {
       <Header />
       <Hero />
       <Project />
+      <Contact />
     </Box>
   );
 };
