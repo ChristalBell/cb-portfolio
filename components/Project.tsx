@@ -5,13 +5,15 @@ import React from "react";
 import Image from "next/image";
 import ProjectButton from "./ProjectButton";
 import CodeButton from "./CodeButton";
+import Contact from "./Contact";
+import ContactButton from "./ContactButton";
 
 const Project = () => {
   return (
     <Box>
       <Box sx={{ display: "flex" }}>
         <Typography variant="h1"> Projects</Typography>
-        <Button>Contact Me</Button>
+        <ContactButton />
       </Box>
 
       <Box sx={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)" }}>

@@ -1,8 +1,8 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Languages from "./Languages";
+import ContactButton from "./ContactButton";
 
 const Hero = () => {
   return (
@@ -28,7 +28,7 @@ const Hero = () => {
             Based in Los Angeles, I am a software engineer who is passionate
             about creating custom apps that showcase your personal brands.{" "}
           </Typography>
-          <Button>Contact Me</Button>
+          <ContactButton />
         </Box>
         <Box> pic of me </Box>
       </Box>
