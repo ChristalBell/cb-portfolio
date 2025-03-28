@@ -10,8 +10,15 @@ import ContactButton from "./ContactButton";
 
 const Project = () => {
   return (
-    <Box>
-      <Box sx={{ display: "flex" }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        marginLeft: "20rem",
+        marginBottom: "2rem",
+      }}
+    >
+      <Box sx={{ display: "flex", justifyContent: "space-between" }}>
         <Typography variant="h1"> Projects</Typography>
         <ContactButton />
       </Box>
@@ -19,8 +26,9 @@ const Project = () => {
       <Box sx={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)" }}>
         <Box>
           <Image src="" alt="ebank"></Image>
-          <Typography>ebank</Typography>
-          <Box>
+          <Typography variant="h5">ebank</Typography>
+          <Typography>language used</Typography>
+          <Box className="mobile">
             <ProjectButton />
             <CodeButton />
           </Box>
@@ -28,8 +36,9 @@ const Project = () => {
 
         <Box>
           <Image src="" alt="sneakers ecommerce"></Image>
-          <Typography>sneakers ecommerce</Typography>
-          <Box>
+          <Typography variant="h5">sneakers ecommerce</Typography>
+          <Typography>language used</Typography>
+          <Box className="mobile">
             <ProjectButton />
             <CodeButton />
           </Box>
@@ -37,8 +46,9 @@ const Project = () => {
 
         <Box>
           <Image src="" alt="recipe"></Image>
-          <Typography>recipe test </Typography>
-          <Box>
+          <Typography variant="h5">recipe test </Typography>
+          <Typography>language used</Typography>
+          <Box className="mobile">
             <ProjectButton />
             <CodeButton />
           </Box>
@@ -46,8 +56,9 @@ const Project = () => {
 
         <Box>
           <Image src="" alt="advice"></Image>
-          <Typography>advice-generator </Typography>
-          <Box>
+          <Typography variant="h5">advice-generator </Typography>
+          <Typography>language used</Typography>
+          <Box className="mobile">
             <ProjectButton />
             <CodeButton />
           </Box>
@@ -55,8 +66,9 @@ const Project = () => {
 
         <Box>
           <Image src="" alt="dictionary"></Image>
-          <Typography>dictionary</Typography>
-          <Box>
+          <Typography variant="h5">dictionary</Typography>
+          <Typography>language used</Typography>
+          <Box className="mobile">
             <ProjectButton />
             <CodeButton />
           </Box>
@@ -64,8 +76,9 @@ const Project = () => {
 
         <Box>
           <Image src="" alt="bmi calculator"></Image>
-          <Typography>bmi calculator</Typography>
-          <Box>
+          <Typography variant="h5">bmi calculator</Typography>
+          <Typography>language used</Typography>
+          <Box className="mobile">
             <ProjectButton />
             <CodeButton />
           </Box>
@@ -73,8 +86,9 @@ const Project = () => {
 
         <Box>
           <Image src="" alt="rock paper scissor"></Image>
-          <Typography>rock paper scissor</Typography>
-          <Box>
+          <Typography variant="h5">rock paper scissor</Typography>
+          <Typography>language used</Typography>
+          <Box className="mobile">
             <ProjectButton />
             <CodeButton />
           </Box>
@@ -82,8 +96,9 @@ const Project = () => {
 
         <Box>
           <Image src="" alt="coffee business"></Image>
-          <Typography>coffee business </Typography>
-          <Box>
+          <Typography variant="h5">coffee business </Typography>
+          <Typography>language used</Typography>
+          <Box className="mobile">
             <ProjectButton />
             <CodeButton />
           </Box>

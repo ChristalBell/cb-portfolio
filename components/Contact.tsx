@@ -3,14 +3,15 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Header from "./Header";
+import SendButton from "./SendButton";
 
 const Contact = () => {
   return (
     <Box>
       <Box
-        sx={{ display: "flex", justifyContent: "space-between", width: "80vw" }}
+        sx={{ display: "flex", justifyContent: "space-between", width: "90vw" }}
       >
-        <Box className="left" sx={{ width: "20vw", marginLeft: "15rem" }}>
+        <Box className="left" sx={{ marginLeft: "20rem", width: "25vw" }}>
           <Typography variant="h1" sx={{ marginBottom: "2rem" }}>
             Contact
           </Typography>
@@ -20,7 +21,7 @@ const Contact = () => {
           </Typography>
         </Box>
 
-        <Box className="right">
+        <Box className="right" sx={{ width: "30vw" }}>
           <Box>
             <Typography sx={{ marginLeft: "2rem" }}> Name </Typography>
             <hr
@@ -50,7 +51,7 @@ const Contact = () => {
             <hr style={{ width: "30vw", marginBottom: "1.5rem" }}></hr>
           </Box>
 
-          <Button sx={{ marginLeft: "25rem" }}>Send Message</Button>
+          <SendButton />
         </Box>
       </Box>
       <hr

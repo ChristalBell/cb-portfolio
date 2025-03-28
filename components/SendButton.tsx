@@ -2,12 +2,12 @@ import Button from "@mui/material/Button";
 import React from "react";
 import Box from "@mui/material/Box";
 
-const ContactButton = () => {
+const SendButton = () => {
   return (
-    <Box sx={{ marginRight: "10vw" }}>
-      <Button>Contact Me</Button>
+    <Box sx={{ justifySelf: "right" }}>
+      <Button>Send Message</Button>
     </Box>
   );
 };
 
-export default ContactButton;
+export default SendButton;

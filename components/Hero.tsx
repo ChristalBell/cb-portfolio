@@ -6,13 +6,14 @@ import ContactButton from "./ContactButton";
 
 const Hero = () => {
   return (
-    <Box>
+    <Box sx={{ marginBottom: "2rem" }}>
       <Box
         className="hero-container"
         sx={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-around",
+          justifyContent: "space-between",
+          marginLeft: "20rem",
         }}
       >
         <Box
@@ -23,14 +24,16 @@ const Hero = () => {
             maxWidth: "30vw",
           }}
         >
-          <Typography variant="h1">Hi! Im Christal </Typography>
+          <Typography variant="h1" sx={{ marginTop: ".5rem" }}>
+            Hi! Im Christal{" "}
+          </Typography>
           <Typography>
             Based in Los Angeles, I am a software engineer who is passionate
             about creating custom apps that showcase your personal brands.{" "}
           </Typography>
           <ContactButton />
         </Box>
-        <Box> pic of me </Box>
+        <Box sx={{ width: "30vw" }}> pic of me </Box>
       </Box>
 
       <hr style={{ maxWidth: "80vw" }}></hr>

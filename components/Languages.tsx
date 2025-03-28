@@ -9,6 +9,8 @@ const Languages = () => {
         display: "grid",
         gridTemplateColumns: "repeat(4, 1fr)",
         justifyItems: "center",
+        marginLeft: "10rem",
+        marginRight: "8rem",
       }}
     >
       <Typography>HTML</Typography>
