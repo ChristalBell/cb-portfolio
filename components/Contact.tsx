@@ -1,9 +1,8 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import Header from "./Header";
 import SendButton from "./SendButton";
+import Footer from "./Footer";
 
 const Contact = () => {
   return (
@@ -57,7 +56,7 @@ const Contact = () => {
       <hr
         style={{ width: "80vw", marginTop: "4rem", marginBottom: "4rem" }}
       ></hr>
-      <Header />
+      <Footer />
     </Box>
   );
 };
