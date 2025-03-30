@@ -18,12 +18,32 @@ const Footer = () => {
         </Typography>
       </Box>
       <Box>
-        <a style={{ paddingRight: "5rem" }}>Project</a>
-        <a>Contact</a>
+        <a
+          href="/projects"
+          target="_blank"
+          style={{ paddingRight: "5rem", textDecoration: "none" }}
+        >
+          Projects
+        </a>
+        <a href="/contact" target="_blank" style={{ textDecoration: "none" }}>
+          Contact
+        </a>
       </Box>
       <Box>
-        <a style={{ paddingRight: "1.5rem" }}>github</a>
-        <a style={{ paddingRight: "1.5rem" }}>vercel</a>
+        <a
+          href="https://github.com/ChristalBell"
+          target="_blank"
+          style={{ paddingRight: "1.5rem", textDecoration: "none" }}
+        >
+          github
+        </a>
+        <a
+          href="https://vercel.com/christals-projects"
+          target="_blank"
+          style={{ paddingRight: "1.5rem", textDecoration: "none" }}
+        >
+          vercel
+        </a>
         <a style={{ paddingRight: "1.5rem" }}>LinkedIn</a>
       </Box>
     </Box>

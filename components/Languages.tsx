@@ -14,14 +14,13 @@ const Languages = () => {
       }}
     >
       <Typography>HTML</Typography>
-      <Typography>Accessibility</Typography>
-      <Typography>CSS</Typography>
-      <Typography>SASS</Typography>
-      <Typography>Material UI</Typography>
-      <Typography>React</Typography>
-      <Typography>Redux</Typography>
       <Typography>Javascript</Typography>
       <Typography>Typescript</Typography>
+      <Typography>React</Typography>
+      <Typography>Redux</Typography>
+      <Typography>Material UI</Typography>
+      <Typography>CSS</Typography>
+      <Typography>SASS</Typography>
     </Box>
   );
 };

@@ -17,9 +17,27 @@ const Header = () => {
         </Typography>
       </Box>
       <Box>
-        <a style={{ paddingRight: "1.5rem" }}>github</a>
-        <a style={{ paddingRight: "1.5rem" }}>vercel</a>
-        <a style={{ paddingRight: "1.5rem" }}>LinkedIn</a>
+        <a
+          href="https://github.com/ChristalBell"
+          target="_blank"
+          style={{ paddingRight: "1.5rem", textDecoration: "none" }}
+        >
+          github
+        </a>
+        <a
+          href="https://vercel.com/christals-projects"
+          target="_blank"
+          style={{ paddingRight: "1.5rem", textDecoration: "none" }}
+        >
+          vercel
+        </a>
+        <a
+          href=""
+          target="_blank"
+          style={{ paddingRight: "1.5rem", textDecoration: "none" }}
+        >
+          LinkedIn
+        </a>
       </Box>
     </Box>
   );

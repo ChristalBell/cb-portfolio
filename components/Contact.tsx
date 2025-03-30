@@ -15,8 +15,9 @@ const Contact = () => {
             Contact
           </Typography>
           <Typography>
-            I would love to hear about your project and how I could help. Please
-            fill in the form, and Ill get back to you as soon as possible.
+            Lets work together to build your customized project! Reach out to me
+            so we can discuss how we can make your dream a reality. Please fill
+            in the form, and Ill get back to you as soon as possible.
           </Typography>
         </Box>
 
