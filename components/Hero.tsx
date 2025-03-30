@@ -6,7 +6,7 @@ import ContactButton from "./ContactButton";
 
 const Hero = () => {
   return (
-    <Box sx={{ marginBottom: "2rem" }}>
+    <Box sx={{ marginBottom: "2rem", marginTop: "2rem" }}>
       <Box
         className="hero-container"
         sx={{
@@ -27,7 +27,7 @@ const Hero = () => {
           <Typography variant="h1" sx={{ marginTop: ".5rem" }}>
             Hi! Im Christal{" "}
           </Typography>
-          <Typography>
+          <Typography sx={{ marginBottom: "1.5rem" }}>
             Based in Los Angeles, I am a software engineer who is passionate
             about creating custom apps that showcase your personal brands.{" "}
           </Typography>
@@ -36,7 +36,13 @@ const Hero = () => {
         <Box sx={{ width: "30vw" }}> pic of me </Box>
       </Box>
 
-      <hr style={{ maxWidth: "80vw" }}></hr>
+      <hr
+        style={{
+          maxWidth: "80vw",
+          marginTop: "1.5rem",
+          marginBottom: "1.5rem",
+        }}
+      ></hr>
       <Languages />
     </Box>
   );

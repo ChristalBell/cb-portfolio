@@ -24,6 +24,13 @@ const Contact = () => {
         <Box className="right" sx={{ width: "30vw" }}>
           <Box>
             <Typography sx={{ marginLeft: "2rem" }}> Name </Typography>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              style={{ border: "none", width: "25rem" }}
+            />
             <hr
               style={{
                 width: "30vw",
@@ -35,6 +42,13 @@ const Contact = () => {
 
           <Box>
             <Typography sx={{ marginLeft: "2rem" }}>Email</Typography>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              required
+              style={{ border: "none", width: "25rem" }}
+            />
             <hr
               style={{
                 width: "30vw",
@@ -45,9 +59,21 @@ const Contact = () => {
           </Box>
 
           <Box>
-            <Typography sx={{ paddingBottom: "4rem", marginLeft: "2rem" }}>
+            <Typography sx={{ paddingBottom: "1rem", marginLeft: "2rem" }}>
               Message
             </Typography>
+            <textarea
+              id="message"
+              name="message"
+              required
+              wrap="hard"
+              style={{
+                border: "none",
+                width: "25rem",
+                height: "10rem",
+                resize: "none",
+              }}
+            />
             <hr style={{ width: "30vw", marginBottom: "1.5rem" }}></hr>
           </Box>
 

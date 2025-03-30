@@ -25,7 +25,8 @@ const Project = () => {
         display: "flex",
         flexDirection: "column",
         marginLeft: "20rem",
-        marginBottom: "2rem",
+        marginBottom: "4rem",
+        marginTop: "4rem",
       }}
     >
       <Box
