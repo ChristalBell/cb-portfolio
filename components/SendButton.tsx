@@ -5,7 +5,9 @@ import Box from "@mui/material/Box";
 const SendButton = () => {
   return (
     <Box sx={{ justifySelf: "right" }}>
-      <Button>Send Message</Button>
+      <a href="mailto:christalvictoriabell@gmail.com">
+        <Button>Send Message</Button>
+      </a>
     </Box>
   );
 };
