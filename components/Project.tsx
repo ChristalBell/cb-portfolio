@@ -46,7 +46,7 @@ const Project = () => {
             HTML SCSS CSS JAVASCRIPT
           </Typography>
           <Box className="mobile">
-            <ProjectButton />
+            <ProjectButton goToProject="https://ebank-six.vercel.app" />
             <CodeButton />
           </Box>
         </Box>
