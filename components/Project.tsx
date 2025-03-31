@@ -1,11 +1,9 @@
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import React from "react";
 import Image from "next/image";
 import ProjectButton from "./ProjectButton";
 import CodeButton from "./CodeButton";
-import Contact from "./Contact";
 import ContactButton from "./ContactButton";
 
 const Project = () => {

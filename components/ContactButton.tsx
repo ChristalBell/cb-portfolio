@@ -5,7 +5,9 @@ import Box from "@mui/material/Box";
 const ContactButton = () => {
   return (
     <Box sx={{ marginRight: "10vw" }}>
-      <Button>Contact Me</Button>
+      <a href="/contact" target="_blank" style={{ textDecoration: "none" }}>
+        <Button>Contact</Button>
+      </a>
     </Box>
   );
 };
