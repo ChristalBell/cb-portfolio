@@ -18,6 +18,10 @@ const Languages = () => {
       <Typography>Typescript</Typography>
       <Typography>React</Typography>
       <Typography>Redux</Typography>
+      <Typography>API</Typography>
+      <Typography>NODE.JS</Typography>
+      <Typography>GITHUB</Typography>
+      <Typography>VERCEL</Typography>
       <Typography>Material UI</Typography>
       <Typography>CSS</Typography>
       <Typography>SASS</Typography>

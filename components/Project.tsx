@@ -5,18 +5,9 @@ import Image from "next/image";
 import ProjectButton from "./ProjectButton";
 import CodeButton from "./CodeButton";
 import ContactButton from "./ContactButton";
+import Button from "@mui/material/Button";
 
 const Project = () => {
-  // const projectLinks = [
-  //   "ebank-six.vercel.app",
-  //   "sneakers-commerce-mocha.vercel.app",
-  //   "recipe-test-seven.vercel.app",
-  //   "advice-generator-lovat-five.vercel.app",
-  //   "dictionary",
-  //   "bmi",
-  //   "rock",
-  //   "coffee",
-  // ];
   return (
     <Box
       sx={{
@@ -46,8 +37,17 @@ const Project = () => {
             HTML SCSS CSS JAVASCRIPT
           </Typography>
           <Box className="mobile">
-            <ProjectButton goToProject="https://ebank-six.vercel.app" />
-            <CodeButton />
+            <Button href="https://ebank-six.vercel.app" target="_blank">
+              {" "}
+              View Project{" "}
+            </Button>
+            <Button
+              href="https://github.com/ChristalBell/ebank.git"
+              target="_blank"
+            >
+              {" "}
+              View Code{" "}
+            </Button>
           </Box>
         </Box>
 
@@ -58,8 +58,18 @@ const Project = () => {
             TYPESCRIPT SCSS CSS JAVASCRIPT
           </Typography>
           <Box className="mobile">
-            <ProjectButton />
-            <CodeButton />
+            <Button href="https://sneakers-commerce-mocha.vercel.app">
+              {" "}
+              View Project{" "}
+            </Button>
+
+            <Button
+              href="https://github.com/ChristalBell/sneakers-commerce.git"
+              target="_blank"
+            >
+              {" "}
+              View Code{" "}
+            </Button>
           </Box>
         </Box>
 
@@ -68,8 +78,16 @@ const Project = () => {
           <Typography variant="h5">recipe test</Typography>
           <Typography sx={{ fontSize: ".75rem" }}>TYPESCRIPT</Typography>
           <Box className="mobile">
-            <ProjectButton />
-            <CodeButton />
+            <Button href="https://recipe-test-seven.vercel.app" target="_blank">
+              View Project
+            </Button>
+            <Button
+              href="https://github.com/ChristalBell/recipe-test.git"
+              target="_blank"
+            >
+              {" "}
+              View Code{" "}
+            </Button>
           </Box>
         </Box>
 
@@ -80,8 +98,19 @@ const Project = () => {
             TYPESCRIPT JAVASCRIPT CSS
           </Typography>
           <Box className="mobile">
-            <ProjectButton />
-            <CodeButton />
+            <Button
+              href="https://advice-generator-lovat-five.vercel.app"
+              target="_blank"
+            >
+              View Project
+            </Button>
+            <Button
+              href="https://github.com/ChristalBell/advice-generator.git"
+              target="_blank"
+            >
+              {" "}
+              View Code{" "}
+            </Button>
           </Box>
         </Box>
 
@@ -91,7 +120,13 @@ const Project = () => {
           <Typography sx={{ fontSize: ".75rem" }}>TYPESCRIPT</Typography>
           <Box className="mobile">
             <ProjectButton />
-            <CodeButton />
+            <Button
+              href="https://github.com/ChristalBell/dictionary.git"
+              target="_blank"
+            >
+              {" "}
+              View Code{" "}
+            </Button>
           </Box>
         </Box>
 
@@ -101,7 +136,13 @@ const Project = () => {
           <Typography sx={{ fontSize: ".75rem" }}>TYPESCRIPT</Typography>
           <Box className="mobile">
             <ProjectButton />
-            <CodeButton />
+            <Button
+              href=" https://github.com/ChristalBell/bmi-calculator.git"
+              target="_blank"
+            >
+              {" "}
+              View Code{" "}
+            </Button>
           </Box>
         </Box>
 
