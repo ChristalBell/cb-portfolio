@@ -31,9 +31,15 @@ const Project = () => {
 
       <Box sx={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)" }}>
         <Box>
-          <Image src="" alt="ebank"></Image>
+          <Image
+            src=""
+            style={{ marginBottom: "1rem", marginTop: "1rem" }}
+            alt="ebank"
+          ></Image>
           <Typography variant="h5">ebank </Typography>
-          <Typography sx={{ fontSize: ".75rem" }}>
+          <Typography
+            sx={{ fontSize: ".75rem", marginTop: "1rem", marginBottom: "1rem" }}
+          >
             HTML SCSS CSS JAVASCRIPT
           </Typography>
           <Box className="mobile">
@@ -52,9 +58,15 @@ const Project = () => {
         </Box>
 
         <Box>
-          <Image src="" alt="sneakers ecommerce"></Image>
+          <Image
+            src=""
+            style={{ marginBottom: "1rem", marginTop: "1rem" }}
+            alt="sneakers ecommerce"
+          ></Image>
           <Typography variant="h5">sneakers ecommerce</Typography>
-          <Typography sx={{ fontSize: ".75rem" }}>
+          <Typography
+            sx={{ fontSize: ".75rem", marginTop: "1rem", marginBottom: "1rem" }}
+          >
             TYPESCRIPT SCSS CSS JAVASCRIPT
           </Typography>
           <Box className="mobile">
@@ -74,9 +86,17 @@ const Project = () => {
         </Box>
 
         <Box>
-          <Image src="" alt="recipe"></Image>
+          <Image
+            src=""
+            style={{ marginBottom: "1rem", marginTop: "1rem" }}
+            alt="recipe"
+          ></Image>
           <Typography variant="h5">recipe test</Typography>
-          <Typography sx={{ fontSize: ".75rem" }}>TYPESCRIPT</Typography>
+          <Typography
+            sx={{ fontSize: ".75rem", marginTop: "1rem", marginBottom: "1rem" }}
+          >
+            TYPESCRIPT
+          </Typography>
           <Box className="mobile">
             <Button href="https://recipe-test-seven.vercel.app" target="_blank">
               View Project
@@ -92,9 +112,15 @@ const Project = () => {
         </Box>
 
         <Box>
-          <Image src="" alt="advice"></Image>
+          <Image
+            src=""
+            style={{ marginBottom: "1rem", marginTop: "1rem" }}
+            alt="advice"
+          ></Image>
           <Typography variant="h5">advice-generator</Typography>
-          <Typography sx={{ fontSize: ".75rem" }}>
+          <Typography
+            sx={{ fontSize: ".75rem", marginTop: "1rem", marginBottom: "1rem" }}
+          >
             TYPESCRIPT JAVASCRIPT CSS
           </Typography>
           <Box className="mobile">
@@ -115,9 +141,17 @@ const Project = () => {
         </Box>
 
         <Box>
-          <Image src="" alt="dictionary"></Image>
+          <Image
+            src=""
+            style={{ marginBottom: "1rem", marginTop: "1rem" }}
+            alt="dictionary"
+          ></Image>
           <Typography variant="h5">dictionary</Typography>
-          <Typography sx={{ fontSize: ".75rem" }}>TYPESCRIPT</Typography>
+          <Typography
+            sx={{ fontSize: ".75rem", marginTop: "1rem", marginBottom: "1rem" }}
+          >
+            TYPESCRIPT
+          </Typography>
           <Box className="mobile">
             <ProjectButton />
             <Button
@@ -131,9 +165,17 @@ const Project = () => {
         </Box>
 
         <Box>
-          <Image src="" alt="bmi calculator"></Image>
+          <Image
+            src=""
+            style={{ marginBottom: "1rem", marginTop: "1rem" }}
+            alt="bmi calculator"
+          ></Image>
           <Typography variant="h5">bmi calculator</Typography>
-          <Typography sx={{ fontSize: ".75rem" }}>TYPESCRIPT</Typography>
+          <Typography
+            sx={{ fontSize: ".75rem", marginTop: "1rem", marginBottom: "1rem" }}
+          >
+            TYPESCRIPT
+          </Typography>
           <Box className="mobile">
             <ProjectButton />
             <Button
@@ -147,9 +189,17 @@ const Project = () => {
         </Box>
 
         <Box>
-          <Image src="" alt="rock paper scissor"></Image>
+          <Image
+            src=""
+            style={{ marginBottom: "1rem", marginTop: "1rem" }}
+            alt="rock paper scissor"
+          ></Image>
           <Typography variant="h5">rock paper scissor</Typography>
-          <Typography sx={{ fontSize: ".75rem" }}>language used</Typography>
+          <Typography
+            sx={{ fontSize: ".75rem", marginTop: "1rem", marginBottom: "1rem" }}
+          >
+            language used
+          </Typography>
           <Box className="mobile">
             <ProjectButton />
             <CodeButton />
@@ -157,9 +207,17 @@ const Project = () => {
         </Box>
 
         <Box>
-          <Image src="" alt="coffee business"></Image>
+          <Image
+            src=""
+            style={{ marginBottom: "1rem", marginTop: "1rem" }}
+            alt="coffee business"
+          ></Image>
           <Typography variant="h5">coffee business </Typography>
-          <Typography sx={{ fontSize: ".75rem" }}>language used</Typography>
+          <Typography
+            sx={{ fontSize: ".75rem", marginTop: "1rem", marginBottom: "1rem" }}
+          >
+            language used
+          </Typography>
           <Box className="mobile">
             <ProjectButton />
             <CodeButton />

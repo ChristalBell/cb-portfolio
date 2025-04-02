@@ -9,6 +9,7 @@ const Header = () => {
         display: "flex",
         justifyContent: "space-around",
         alignItems: "center",
+        marginTop: "2rem",
       }}
     >
       <Box>

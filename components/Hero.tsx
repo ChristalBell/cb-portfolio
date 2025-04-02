@@ -27,7 +27,7 @@ const Hero = () => {
           <Typography variant="h1" sx={{ marginTop: ".5rem" }}>
             Hi! Im Christal{" "}
           </Typography>
-          <Typography sx={{ marginBottom: "1.5rem" }}>
+          <Typography sx={{ marginTop: "2rem", marginBottom: "4rem" }}>
             Based in Los Angeles, I am a software engineer who is passionate
             about creating custom apps that showcase your personal brands.{" "}
           </Typography>
