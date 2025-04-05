@@ -1,10 +1,13 @@
+"use client";
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Languages from "./Languages";
 import ContactButton from "./ContactButton";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Hero = () => {
+  const tablet = useMediaQuery("(min-width:900px)");
   return (
     <Box sx={{ marginBottom: "2rem", marginTop: "2rem" }}>
       <Box
@@ -13,7 +16,7 @@ const Hero = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          marginLeft: "20rem",
+          marginLeft: tablet ? "20rem" : "6rem",
         }}
       >
         <Box
