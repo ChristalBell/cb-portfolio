@@ -1,3 +1,4 @@
+"use client";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import React from "react";
@@ -6,14 +7,16 @@ import ProjectButton from "./ProjectButton";
 import CodeButton from "./CodeButton";
 import ContactButton from "./ContactButton";
 import Button from "@mui/material/Button";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Project = () => {
+  const tablet = useMediaQuery("(min-width:900px)");
   return (
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
-        marginLeft: "20rem",
+        marginLeft: tablet ? "20rem" : "8rem",
         marginBottom: "4rem",
         marginTop: "4rem",
       }}
@@ -23,6 +26,7 @@ const Project = () => {
           display: "flex",
           justifyContent: "space-between",
           marginBottom: "1rem",
+          alignItems: "center",
         }}
       >
         <Typography variant="h1"> Projects</Typography>

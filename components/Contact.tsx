@@ -1,16 +1,34 @@
+"use client";
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import SendButton from "./SendButton";
 import Footer from "./Footer";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Contact = () => {
+  const tablet = useMediaQuery("(min-width:900px)");
   return (
     <Box>
       <Box
-        sx={{ display: "flex", justifyContent: "space-between", width: "90vw" }}
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "90vw",
+          flexDirection: tablet ? "row" : "column",
+        }}
       >
-        <Box className="left" sx={{ marginLeft: "20rem", width: "25vw" }}>
+        <Box
+          className="left"
+          sx={{
+            marginLeft: tablet ? "20rem" : "14rem",
+            width: tablet ? "25vw" : "50vw",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            textAlign: tablet ? "left" : "center",
+          }}
+        >
           <Typography variant="h1" sx={{ marginBottom: "2rem" }}>
             Contact
           </Typography>
@@ -21,19 +39,33 @@ const Contact = () => {
           </Typography>
         </Box>
 
-        <Box className="right" sx={{ width: "30vw" }}>
+        <Box
+          className="right"
+          sx={{
+            width: tablet ? "30vw" : "80vw",
+            marginLeft: tablet ? "20rem" : "8rem",
+            marginTop: tablet ? "0" : "4rem",
+          }}
+        >
           <Box>
-            <Typography sx={{ marginLeft: "2rem" }}> Name </Typography>
+            <Typography sx={{ marginLeft: tablet ? "2rem" : "6rem" }}>
+              {" "}
+              Name{" "}
+            </Typography>
             <input
               type="text"
               id="name"
               name="name"
               required
-              style={{ border: "none", width: "25rem" }}
+              style={{
+                border: "none",
+                width: "25rem",
+                marginLeft: tablet ? "0" : "6rem",
+              }}
             />
             <hr
               style={{
-                width: "30vw",
+                width: tablet ? "30vw" : "60vw",
                 marginTop: "1rem",
                 marginBottom: "1.5rem",
               }}
@@ -41,17 +73,23 @@ const Contact = () => {
           </Box>
 
           <Box>
-            <Typography sx={{ marginLeft: "2rem" }}>Email</Typography>
+            <Typography sx={{ marginLeft: tablet ? "2rem" : "6rem" }}>
+              Email
+            </Typography>
             <input
               type="text"
               id="email"
               name="email"
               required
-              style={{ border: "none", width: "25rem" }}
+              style={{
+                border: "none",
+                width: "25rem",
+                marginLeft: tablet ? "0" : "6rem",
+              }}
             />
             <hr
               style={{
-                width: "30vw",
+                width: tablet ? "30vw" : "60vw",
                 marginTop: "1rem",
                 marginBottom: "1.5rem",
               }}
@@ -59,7 +97,12 @@ const Contact = () => {
           </Box>
 
           <Box>
-            <Typography sx={{ paddingBottom: "1rem", marginLeft: "2rem" }}>
+            <Typography
+              sx={{
+                paddingBottom: "1rem",
+                marginLeft: tablet ? "2rem" : "6rem",
+              }}
+            >
               Message
             </Typography>
             <textarea
@@ -72,9 +115,15 @@ const Contact = () => {
                 width: "25rem",
                 height: "10rem",
                 resize: "none",
+                marginLeft: tablet ? "0" : "6rem",
               }}
             />
-            <hr style={{ width: "30vw", marginBottom: "1.5rem" }}></hr>
+            <hr
+              style={{
+                width: tablet ? "30vw" : "60vw",
+                marginBottom: "1.5rem",
+              }}
+            ></hr>
           </Box>
 
           <SendButton />
