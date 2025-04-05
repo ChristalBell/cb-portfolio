@@ -21,7 +21,7 @@ const Contact = () => {
         <Box
           className="left"
           sx={{
-            marginLeft: tablet ? "20rem" : "14rem",
+            marginLeft: tablet ? "20rem" : "13rem",
             width: tablet ? "25vw" : "50vw",
             display: "flex",
             flexDirection: "column",
@@ -48,7 +48,7 @@ const Contact = () => {
           }}
         >
           <Box>
-            <Typography sx={{ marginLeft: tablet ? "2rem" : "6rem" }}>
+            <Typography sx={{ marginLeft: tablet ? "2rem" : "4rem" }}>
               {" "}
               Name{" "}
             </Typography>
@@ -60,12 +60,12 @@ const Contact = () => {
               style={{
                 border: "none",
                 width: "25rem",
-                marginLeft: tablet ? "0" : "6rem",
+                marginLeft: tablet ? "0" : "4rem",
               }}
             />
             <hr
               style={{
-                width: tablet ? "30vw" : "60vw",
+                width: tablet ? "30vw" : "65vw",
                 marginTop: "1rem",
                 marginBottom: "1.5rem",
               }}
@@ -73,7 +73,7 @@ const Contact = () => {
           </Box>
 
           <Box>
-            <Typography sx={{ marginLeft: tablet ? "2rem" : "6rem" }}>
+            <Typography sx={{ marginLeft: tablet ? "2rem" : "4rem" }}>
               Email
             </Typography>
             <input
@@ -84,12 +84,12 @@ const Contact = () => {
               style={{
                 border: "none",
                 width: "25rem",
-                marginLeft: tablet ? "0" : "6rem",
+                marginLeft: tablet ? "0" : "4rem",
               }}
             />
             <hr
               style={{
-                width: tablet ? "30vw" : "60vw",
+                width: tablet ? "30vw" : "65vw",
                 marginTop: "1rem",
                 marginBottom: "1.5rem",
               }}
@@ -100,7 +100,7 @@ const Contact = () => {
             <Typography
               sx={{
                 paddingBottom: "1rem",
-                marginLeft: tablet ? "2rem" : "6rem",
+                marginLeft: tablet ? "2rem" : "4rem",
               }}
             >
               Message
@@ -115,12 +115,12 @@ const Contact = () => {
                 width: "25rem",
                 height: "10rem",
                 resize: "none",
-                marginLeft: tablet ? "0" : "6rem",
+                marginLeft: tablet ? "0" : "4rem",
               }}
             />
             <hr
               style={{
-                width: tablet ? "30vw" : "60vw",
+                width: tablet ? "30vw" : "65vw",
                 marginBottom: "1.5rem",
               }}
             ></hr>
