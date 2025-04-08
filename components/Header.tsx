@@ -14,6 +14,7 @@ const Header = () => {
         alignItems: "center",
         marginTop: "2rem",
         flexDirection: mobile ? "column" : "row",
+        marginLeft: mobile ? "3rem" : "0",
       }}
     >
       <Box>

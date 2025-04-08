@@ -8,6 +8,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Contact = () => {
   const tablet = useMediaQuery("(min-width:900px)");
+  const mobile = useMediaQuery("(max-width:600px)");
   return (
     <Box>
       <Box
@@ -21,7 +22,7 @@ const Contact = () => {
         <Box
           className="left"
           sx={{
-            marginLeft: tablet ? "20rem" : "13rem",
+            marginLeft: mobile ? "7.5rem" : tablet ? "20rem" : "13rem",
             width: tablet ? "25vw" : "50vw",
             display: "flex",
             flexDirection: "column",
@@ -43,7 +44,7 @@ const Contact = () => {
           className="right"
           sx={{
             width: tablet ? "30vw" : "80vw",
-            marginLeft: tablet ? "20rem" : "8rem",
+            marginLeft: mobile ? "3rem" : tablet ? "20rem" : "8rem",
             marginTop: tablet ? "0" : "4rem",
           }}
         >

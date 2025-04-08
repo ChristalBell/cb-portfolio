@@ -16,8 +16,8 @@ const Hero = () => {
         sx={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-between",
-          marginLeft: tablet ? "20rem" : "6rem",
+          justifyContent: mobile ? "center" : "space-between",
+          marginLeft: mobile ? "1.5rem" : tablet ? "20rem" : "6rem",
           flexDirection: mobile ? "column-reverse" : "row",
         }}
       >
@@ -26,14 +26,20 @@ const Hero = () => {
             display: "flex",
             alignItems: "left",
             flexDirection: "column",
-            maxWidth: "30vw",
+            maxWidth: mobile ? "50vw" : "30vw",
             justifyContent: mobile ? "center" : "space-between",
           }}
         >
           <Typography variant="h1" sx={{ marginTop: ".5rem" }}>
             Hi! Im Christal{" "}
           </Typography>
-          <Typography sx={{ marginTop: "2rem", marginBottom: "4rem" }}>
+          <Typography
+            sx={{
+              marginTop: "2rem",
+              marginBottom: "4rem",
+              textAlign: mobile ? "center" : "left",
+            }}
+          >
             Based in Los Angeles, I am a software engineer who is passionate
             about creating custom apps that showcase your personal brands.{" "}
           </Typography>
