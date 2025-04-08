@@ -1,8 +1,11 @@
+"use client";
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Header = () => {
+  const mobile = useMediaQuery("(max-width:600px)");
   return (
     <Box
       sx={{
@@ -10,6 +13,7 @@ const Header = () => {
         justifyContent: "space-around",
         alignItems: "center",
         marginTop: "2rem",
+        flexDirection: mobile ? "column" : "row",
       }}
     >
       <Box>
@@ -17,7 +21,7 @@ const Header = () => {
           Christal Bell
         </Typography>
       </Box>
-      <Box>
+      <Box sx={{ marginTop: mobile ? "2rem" : "0" }}>
         <a
           href="https://github.com/ChristalBell"
           target="_blank"

@@ -8,6 +8,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Hero = () => {
   const tablet = useMediaQuery("(min-width:900px)");
+  const mobile = useMediaQuery("(max-width:600px)");
   return (
     <Box sx={{ marginBottom: "2rem", marginTop: "2rem" }}>
       <Box
@@ -17,6 +18,7 @@ const Hero = () => {
           alignItems: "center",
           justifyContent: "space-between",
           marginLeft: tablet ? "20rem" : "6rem",
+          flexDirection: mobile ? "column-reverse" : "row",
         }}
       >
         <Box
@@ -25,6 +27,7 @@ const Hero = () => {
             alignItems: "left",
             flexDirection: "column",
             maxWidth: "30vw",
+            justifyContent: mobile ? "center" : "space-between",
           }}
         >
           <Typography variant="h1" sx={{ marginTop: ".5rem" }}>
@@ -36,7 +39,16 @@ const Hero = () => {
           </Typography>
           <ContactButton />
         </Box>
-        <Box sx={{ width: "30vw" }}> pic of me </Box>
+        <Box
+          sx={{
+            width: "30vw",
+            marginTop: mobile ? "2rem" : "0",
+            marginBottom: mobile ? "2rem" : "0",
+          }}
+        >
+          {" "}
+          pic of me{" "}
+        </Box>
       </Box>
 
       <hr
