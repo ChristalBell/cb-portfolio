@@ -1,16 +1,18 @@
+" use client";
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-
+import useMediaQuery from "@mui/material/useMediaQuery";
 const Languages = () => {
+  const mobile = useMediaQuery("(max-width:600px)");
   return (
     <Box
       sx={{
         display: "grid",
         gridTemplateColumns: "repeat(4, 1fr)",
         justifyItems: "center",
-        marginLeft: "10rem",
-        marginRight: "8rem",
+        marginLeft: mobile ? "2.5rem" : "10rem",
+        marginRight: mobile ? "2rem" : "8rem",
       }}
     >
       <Typography>HTML</Typography>

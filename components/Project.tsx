@@ -11,12 +11,13 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Project = () => {
   const tablet = useMediaQuery("(min-width:900px)");
+  const mobile = useMediaQuery("(max-width:600px)");
   return (
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
-        marginLeft: tablet ? "20rem" : "8rem",
+        marginLeft: mobile ? "6rem" : tablet ? "20rem" : "8rem",
         marginBottom: "4rem",
         marginTop: "4rem",
       }}
@@ -24,16 +25,34 @@ const Project = () => {
       <Box
         sx={{
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: mobile ? "center" : "space-between",
           marginBottom: "1rem",
           alignItems: "center",
+          flexDirection: mobile ? "column" : "row",
+          marginLeft: mobile ? " -4rem" : "0rem",
         }}
       >
-        <Typography variant="h1"> Projects</Typography>
+        <Typography
+          sx={{
+            fontSize: mobile ? "54px" : "56px",
+            fontWeight: "bold",
+          }}
+        >
+          {" "}
+          Projects
+        </Typography>
         <ContactButton />
       </Box>
 
-      <Box sx={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)" }}>
+      <Box
+        sx={{
+          display: mobile ? "flex" : "grid",
+          flexDirection: "column",
+          alignItems: "center",
+          marginLeft: mobile ? "-4rem" : "0rem",
+          gridTemplateColumns: "repeat(2, 1fr)",
+        }}
+      >
         <Box>
           <Image
             src=""

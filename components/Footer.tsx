@@ -15,23 +15,40 @@ const Footer = () => {
       }}
     >
       <Box>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography
+          sx={{
+            fontSize: mobile ? "15px" : "20px",
+            fontWeight: "bold",
+            margin: mobile ? "0 1rem" : "0 0",
+          }}
+        >
           Christal Bell
         </Typography>
       </Box>
-      <Box>
+      <Box sx={{ fontSize: mobile ? "12px" : "16px" }}>
         <a
           href="/projects"
           target="_blank"
-          style={{ paddingRight: "5rem", textDecoration: "none" }}
+          style={{
+            paddingRight: "5rem",
+            textDecoration: "none",
+          }}
         >
           Projects
         </a>
-        <a href="/contact" target="_blank" style={{ textDecoration: "none" }}>
+        <a
+          href="/contact"
+          target="_blank"
+          style={{
+            textDecoration: "none",
+            marginLeft: mobile ? "-4rem" : "0",
+            marginRight: mobile ? "1rem" : "0",
+          }}
+        >
           Contact
         </a>
       </Box>
-      <Box>
+      <Box sx={{ fontSize: mobile ? "12px" : "16px" }}>
         <a
           href="https://github.com/ChristalBell"
           target="_blank"
